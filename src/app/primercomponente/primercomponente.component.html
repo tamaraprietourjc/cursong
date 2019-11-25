@@ -1,0 +1,50 @@
+<p>primercomponente works!</p>
+<p>Esto es un número: {{variable}}</p>
+<p>Esto es una cadena: {{variableCadena}}</p>
+<p>Esto es un array: {{variableArray}}</p>
+
+<p>Mis variables:</p>
+<ul>
+  <li>Esto es un número: {{miVariable}}</li>
+  <li>Esto es una cadena: {{miVariableCadena}}</li>
+  <li>Esto es un array: {{miVariableArray}}</li>
+  <li>Esto es una tupla: {{miVariableTupla}}</li>
+</ul>
+
+Interfaz Persona:
+<ul>
+  <li>Mostramos una persona: {{variablePersona.nombre}}</li>
+  <li>Mostramos una persona: {{variablePersona.apellidos}}</li>
+  <li>Mostramos una persona: {{variablePersona.edad}}</li>
+</ul>
+
+Interfaz Coche:
+<ul>
+  <li>Mostramos un coche: {{variableCoche.marca}}</li>
+  <li>Mostramos un coche: {{variableCoche.ruedas}} </li>
+</ul>
+
+Clase Persona:
+<ul>
+  <li>Mostramos una CPersona: {{variableCPersona.nombre}}</li>
+  <li>Mostramos una CPersona: {{variableCPersona.apellidos}}</li>
+  <li>Mostramos una CPersona: {{variableCPersona.edad}}</li>
+</ul>
+
+Clase Coche:
+<ul>
+  <li>Mostramos un CCoche: {{variableCCoche.marca}}</li>
+  <li>Mostramos un CCoche: {{variableCCoche.ruedas}}</li>
+</ul>
+
+Llamamos a la función:
+<p>Mi nombre es {{verNombre()}} y mi apellido {{verApellido()}}</p>
+<input value = "{{variableCPersona.nombre}}" (change) = cambiarNombre($event.target.value)>
+<input value = "{{variableCPersona.apellidos}}" (change) = cambiarApellido($event.target.value)>
+<br /><br />
+
+Directiva ngModel 1 dirección:
+<input [ngModel]="variableCPersona.nombre">
+<br /><br />
+Directiva ngModel 2 direcciones:
+<input [(ngModel)]="variableCPersona.nombre">
