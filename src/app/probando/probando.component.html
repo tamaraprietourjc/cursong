@@ -1,0 +1,18 @@
+<p>probando works!</p>
+
+<div *ngIf="!usuarios.length">No hay usuarios por el momento</div>
+<div>
+  <article *ngFor="let usuario of usuarios">
+    <span>{{usuario.nombre}} {{usuario.apellido1}} {{usuario.apellido2}} {{usuario.login}} {{usuario.edad}}</span>
+  </article>
+</div>
+
+
+<div>
+  <p>Nombre: <input type="text" [(ngModel)]="usuario.nombre"></p>
+  <p>Apellido1: <input type="text" [(ngModel)]="usuario.apellido1"></p>
+  <p>Apellido2: <input type="text" [(ngModel)]="usuario.apellido2"></p>
+  <p>Login: <input type="text" [(ngModel)]="usuario.login"></p>
+  <p>Edad: <input type="number" [(ngModel)]="usuario.edad"></p>
+  <p><button (click) =  "this.nuevo()">Guardar</button></p>
+</div>
