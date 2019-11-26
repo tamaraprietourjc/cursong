@@ -1,1 +1,18 @@
-<p>segundocomponente works!</p>
+<p *ngIf ="variableBoolena">segundocomponente works!</p>
+<div [ngSwitch]="numero">
+  <p *ngSwitchCase="0">Se está mostrando el elmento 0</p>
+  <p *ngSwitchCase="1">Se está mostrando el elmento 1</p>
+  <p *ngSwitchCase="2">Se está mostrando el elmento 2</p>
+  <p *ngSwitchDefault>Se está mostrando el elemento por defecto</p>
+</div>
+
+Directiva for:
+<p *ngFor="let posicion of arrayDatos">{{posicion}}</p>
+
+Directivas de atributo:
+<p style = "color: red;">Elemento de color rojo</p>
+<p [ngStyle]="{color: 'green'}">Elemento de color verde a través de directiva</p>
+
+<p style = "font-size: 25px">Elemento de 25px</p>
+<p [ngStyle]="{'font-size': '25px'}">Elemento de 25px a través de directiva</p>
+

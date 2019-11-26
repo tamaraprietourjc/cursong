@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SegundocomponenteComponent implements OnInit {
 
-  constructor() { }
+  variableBoolena = true;
+  numero = 100;
+  arrayDatos: number[];
+
+
+
+  constructor() {
+    this.arrayDatos = [1, 2, 3];
+  }
 
   ngOnInit() {
   }

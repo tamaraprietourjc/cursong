@@ -1,1 +1,20 @@
 <p>tercercomponente works!</p>
+
+<p>Esto es un número: {{numeroPipe}}</p>
+<p>Esto es un decimal: {{numeroPipe | number: '1.0-2'}}</p>
+<hr>
+<p>Dinero: {{dineroPipe}}</p>
+<p>Dinero con moneda: {{dineroPipe | currency: '€'}}</p>
+<hr>
+<p>Fecha: {{fechaPipe}}</p>
+<p>Fecha formateada: {{fechaPipe | date}}</p>
+<p>Fecha formateada: {{fechaPipe | date | lowercase}}</p>
+<p>Fecha formateada: {{fechaPipe | date | uppercase}}</p>
+<p>Fecha formateada: {{fechaPipe | date: 'd/M/y'}}</p>
+<hr>
+<p>Objeto: {{objeto}}</p>
+<p>Objeto: {{objeto | json}}</p>
+<hr>
+<p>Cadena: {{cadenaPipe}}</p>
+<p>Cadena minúscula: {{cadenaPipe | lowercase}}</p>
+<p>Cadena mayúscula: {{cadenaPipe | uppercase}}</p>
