@@ -12,6 +12,9 @@ import { ObsComponent } from './obs/obs.component';
 import {MatButtonModule, MatIconModule, MatMenuModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ProbandoComponent } from './probando/probando.component';
+import {UsuarioApiComponent} from './usuario-api/usuario-api.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { ProbandoComponent } from './probando/probando.component';
     TercercomponenteComponent,
     CuartocomponenteComponent,
     ObsComponent,
-    ProbandoComponent
+    ProbandoComponent,
+    UsuarioApiComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { ProbandoComponent } from './probando/probando.component';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

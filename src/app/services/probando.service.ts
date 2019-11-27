@@ -14,9 +14,9 @@ export class ProbandoService {
   }
 
   public getUsuarios() {
-    //this._usuarios.push(new Usuario ('a', 'b', 'c', 'd', 5));
+    // this._usuarios.push(new Usuario ('a', 'b', 'c', 'd', 5));
     return this._usuarios;
-  }
+    }
 
   public getUsuarios$(): Observable<Usuario[]> {
     return this._usuarios$.asObservable();
